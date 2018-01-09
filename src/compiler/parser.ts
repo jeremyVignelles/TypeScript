@@ -6599,8 +6599,8 @@ namespace ts {
                     result.name = name;
                     result.isNameFirst = isNameFirst;
                     result.isBracketed = isBracketed;
+                    //we need to fill in result.comment now
                     return finishNode(result);
-
                 }
 
                 function parseNestedTypeLiteral(typeExpression: JSDocTypeExpression, name: EntityName) {
