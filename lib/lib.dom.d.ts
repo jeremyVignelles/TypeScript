@@ -15265,7 +15265,7 @@ declare function addEventListener(type: string, listener: EventListenerOrEventLi
 declare function removeEventListener<K extends keyof WindowEventMap>(type: K, listener: (this: Window, ev: WindowEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
 declare function removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
 type AAGUID = string;
-type AlgorithmIdentifier = string | Algorithm;
+type AlgorithmIdentifier = string | any;
 type BodyInit = any;
 type ByteString = string;
 type ConstrainBoolean = boolean | ConstrainBooleanParameters;

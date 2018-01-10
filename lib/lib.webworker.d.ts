@@ -1902,7 +1902,7 @@ declare function addEventListener<K extends keyof DedicatedWorkerGlobalScopeEven
 declare function addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
 declare function removeEventListener<K extends keyof DedicatedWorkerGlobalScopeEventMap>(type: K, listener: (this: DedicatedWorkerGlobalScope, ev: DedicatedWorkerGlobalScopeEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
 declare function removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
-type AlgorithmIdentifier = string | Algorithm;
+type AlgorithmIdentifier = string | any;
 type BodyInit = any;
 type IDBKeyPath = string;
 type RequestInfo = Request | string;
